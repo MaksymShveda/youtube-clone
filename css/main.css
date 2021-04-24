@@ -4,7 +4,8 @@
 
 body {
   background-color: #FFFFFF;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 header {
   display: flex;
@@ -12,82 +13,70 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  height: 56px; }
-
-.header-button {
-  border: none;
-  background-color: #212121;
-  margin: 0px 8px;
-  width: 40px;
-  height: 40px; }
-
-.icon-header {
-  background-color: #212121;
-  color: #FFFFFF;
-  height: 24px;
-  width: 24px; }
-
-.icon-search {
-  color: #FFFFFF;
-  height: 24px;
-  width: 24px;
-  background-color: #424242; }
-
-.icon-button {
-  background-color: #212121;
-  height: 24px;
-  width: 24px; }
+  height: 56px;
+  position: fixed;
+  z-index: 2020;
+  top: 0;
+  left: 0; }
 
 .search {
   width: 35%;
-  height: 32px;
+  height: 55%;
   align-items: center;
   display: flex; }
 
 .search-input {
   width: 85%;
   height: 100%;
-  border: none;
-  padding: 0;
   background-color: #181818;
-  font-size: 16px; }
+  font-size: 16px;
+  border: 1.18px solid #424242;
+  border-radius: 2px 0px 0px 2px; }
 
 .search-button {
   width: 9%;
   height: 100%;
   border: 1.18px solid #424242;
-  padding: 0px;
   background-color: #424242;
   border-radius: 0px 2px 2px 0px; }
 
-.frame1 {
-  flex-direction: row;
+nav {
+  display: flex;
+  justify-self: flex-end; }
+
+aside {
+  font-size: 14px;
+  background-color: #212121;
+  width: 15%;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  height: 100%;
+  font-style: "Roboto", sans-serif; }
+
+aside button {
+  color: #FFFFFF;
+  font-weight: 300;
   display: flex;
   align-items: center; }
 
-.subphoto-button {
-  margin: 0px 16px;
-  width: 32px;
-  height: 32px; }
-
-.sidebar {
-  font-size: 14px;
-  background-color: #212121;
-  width: 15%; }
-
-.sidebar p {
-  color: #FFFFFF;
-  font-weight: 300;
-  width: 60%; }
-
-.menu-button {
-  border: none;
-  background-color: #212121; }
-
-.frame {
+.topmenu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around; }
+  flex-direction: column;
+  align-items: flex-start; }
+
+button {
+  background-color: #212121;
+  border: none; }
+
+.nav-button {
+  padding-left: 8px; }
+
+.sidebar-button {
+  height: 40px;
+  width: 80%; }
+
+.icon-button {
+  padding-right: 24px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,7 @@
 body{
    background-color:$white;
    margin: 0;
+   position: relative;
 }
 header{
 display:flex;
@@ -15,97 +16,71 @@ width: 100%;
 align-items: center;
 justify-content: space-between;
 height: 56px;
+position: fixed;
+z-index: 2020;
+top:0;
+left:0;
 }
-.menu-logo{
-}
-.menu-button{
 
-}
-.header-button{
-  border: none;
-  background-color: $black-theme-light;
-  margin: 0px 8px;
-  width: 40px;
-  height:40px;
-}
-.icon-header{
-   background-color: $black-theme-light;
-   color: $icon-color-fill;
-   height: 24px;
-   width: 24px;
-}
-.icon-search{
-   color: $icon-color-fill;
-   height: 24px;
-   width: 24px;
-   background-color: $bordor-color;
-}
-.icon-button{
-   background-color: $black-theme-light;
-   height: 24px;
-   width: 24px;
-}
 .search{
 width: 35%;
-height: 32px;
+height: 55%;
 align-items: center;
 display: flex;
 }
 .search-input{
 width: 85%;
 height: 100%;
-border: none;
-padding: 0;
 background-color: $blacktheme-dark;
 font-size:$l ;
+border: 1.18px solid $bordor-color;
+border-radius: 2px 0px 0px 2px;
 }
 .search-button{
 width: 9%;
 height: 100%;
 border: 1.18px solid $bordor-color;
-padding: 0px;
 background-color: $bordor-color;
 border-radius: 0px 2px 2px 0px;
 }
-.frame1{
-flex-direction: row;
+nav{
 display: flex;
-align-items: center;
+justify-self: flex-end;
 }
-.frame-subphoto{
 
-}
-.subphoto-button{
-margin: 0px 16px;
-width: 32px;
-height: 32px;
-}
-.subphoto{
-
-}
-.sidebar{
+aside{
 font-size:$m;
 background-color:$black-theme-light ;
 width: 15%;
+position: fixed;
+top:56px;
+left:0;
+height:100%;
+font-style: $primaryFont;
 }
-.sidebar p{
+aside button{
    color:$white;
    font-weight: $regular;
-   width: 60%;
+   display: flex;
+   align-items: center;
 }
 .topmenu{
-
-}
-.menu-button{
-   border: none;
-   background-color: $black-theme-light;
-}
-.detail-menu{
-
-}
-.frame{
    display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-around;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+button{
+   background-color: $black-theme-light;
+   border:none;
+}
+.nav-button{
+   padding-left: 8px;
+}
+.sidebar-button{
+   height:40px;
+   width: 80%;
+}
+.icon-button{
+   padding-right: 24px;
 }
