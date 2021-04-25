@@ -7,8 +7,8 @@
 body{
    background-color:$white;
    margin: 0;
-   position: relative;
 }
+
 header{
 display:flex;
 background-color: $blackthema-light-opacity;
@@ -21,6 +21,7 @@ z-index: 2020;
 top:0;
 left:0;
 }
+
 
 .search{
 width: 35%;
@@ -43,20 +44,19 @@ border: 1.18px solid $bordor-color;
 background-color: $bordor-color;
 border-radius: 0px 2px 2px 0px;
 }
+
 nav{
 display: flex;
 justify-self: flex-end;
 }
 
 aside{
-font-size:$m;
 background-color:$black-theme-light ;
-width: 15%;
+width: 240px;
 position: fixed;
 top:56px;
 left:0;
-height:100%;
-font-style: $primaryFont;
+height:calc(100vh-56px);
 }
 aside button{
    color:$white;
@@ -69,11 +69,6 @@ aside button{
    flex-direction: column;
    align-items: flex-start;
 }
-
-button{
-   background-color: $black-theme-light;
-   border:none;
-}
 .nav-button{
    padding-left: 8px;
 }
@@ -81,6 +76,11 @@ button{
    height:40px;
    width: 80%;
 }
-.icon-button{
-   padding-right: 24px;
+aside p{
+   padding-left: 24px;
+}
+button {
+   border:none;
+   box-sizing: content-box;
+   background-color: transparent;
 }
