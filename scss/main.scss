@@ -7,6 +7,8 @@
 body{
    background-color:$white;
    margin: 0;
+   display: flex;
+   box-sizing: border-box;
 }
 
 header{
@@ -83,4 +85,88 @@ button {
    border:none;
    box-sizing: content-box;
    background-color: transparent;
+}
+.content{
+   width: calc(100vw - 240px);
+   height: calc(100vh - 56px);
+   top: 56px;
+   left: 240px;
+   position: absolute;
+   background-color: $blacktheme-dark;
+}
+.filterbar{
+   position:fixed;
+   background-color: $blackthema-light-opacity;
+   border-top: 1px solid $bordor-color;
+   border-bottom: 1px solid $bordor-color;
+   height:58px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   text-overflow: ellipsis;
+  overflow: hidden; 
+ white-space:nowrap;
+ z-index: 1;
+}
+.resultsfilter{
+   border-radius: 16px;
+   border: 1px solid $bordor-color;
+   height: 30px;
+   background-color: $bordor-color;
+   color: $white;
+   margin-right: 12px;
+   padding: 7px 12px;
+   font-size: $m;
+}
+*::-webkit-scrollbar {
+   width: 0.5em;
+   height: 0.5em;
+   background-color: $black-theme-light;
+ }
+  
+ *::-webkit-scrollbar-thumb {
+   background-color: $icon-color;
+   border-radius: 4px;
+ }
+
+.videos{
+   display: flex;
+   flex-direction: column;
+   height: calc(100% - 58px);
+   top: 58px;
+   position: absolute;
+   padding-top:24px;
+}
+.video-container{
+   display: flex;
+   padding: 0px 32px;
+}
+
+.video-title{
+   font-size: 13px;
+   color: $white;
+   text-decoration: none;
+   font-weight: $bold;
+}
+.video-description{
+   display: flex;
+   padding: 12px 0px;
+   padding-bottom: 40px;
+}
+.channel-icon{
+   padding-right: 11px;
+}
+.channel-name{
+   color: $icon-color;
+   text-decoration: none;
+   font-size: $s;
+}
+.video-views-time{
+   display: flex;
+   color: $icon-color;
+   font-size: $s;
+   height: 14px;
+}
+.video-views time p{
+   height: 14px;
 }
