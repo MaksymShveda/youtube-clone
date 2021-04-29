@@ -58,7 +58,9 @@ width: 240px;
 position: fixed;
 top:56px;
 left:0;
-height:calc(100vh-56px);
+height:calc(100vh - 56px);
+overflow-y:scroll;
+box-sizing: border-box  ;
 }
 aside button{
    color:$white;
@@ -76,10 +78,9 @@ aside button{
 }
 .sidebar-button{
    height:40px;
-   width: 80%;
 }
-aside p{
-   padding-left: 24px;
+aside{
+   padding: 0px 36px 0px 24px;
 }
 button {
    border:none;
@@ -100,13 +101,10 @@ button {
    border-top: 1px solid $bordor-color;
    border-bottom: 1px solid $bordor-color;
    height:58px;
-   width: 100%;
+   width: calc(100vw - 240px);
    display: flex;
    align-items: center;
-   text-overflow: ellipsis;
-  overflow: hidden; 
- white-space:nowrap;
- z-index: 1;
+  overflow-x:scroll; 
 }
 .resultsfilter{
    border-radius: 16px;
@@ -136,10 +134,13 @@ button {
    top: 58px;
    position: absolute;
    padding-top:24px;
+   background-color: $blacktheme-dark;
 }
 .video-container{
    display: flex;
    padding: 0px 32px;
+   background-color: $blacktheme-dark;
+   box-sizing: border-box;
 }
 
 .video-title{
@@ -166,7 +167,23 @@ button {
    color: $icon-color;
    font-size: $s;
    height: 14px;
+   align-items: center;
+   
 }
-.video-views time p{
+.video-views-time p{
    height: 14px;
+   margin: 0px 2px;
+}
+.topmenu, .detailedmenu, .subscriptions{
+   border-bottom: 1px solid $bordor-color;
+}
+.subscribers-newvids{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   width: 144px;
+}
+.icon-button{
+   width: 24px;
+   height: 24px;
 }
