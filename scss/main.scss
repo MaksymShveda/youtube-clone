@@ -9,6 +9,7 @@ body{
    margin: 0;
    display: flex;
    box-sizing: border-box;
+   overflow-x: hidden;
 }
 
 header{
@@ -128,12 +129,9 @@ button {
  }
 
 .videos{
-   display: flex;
-   flex-direction: column;
-   height: calc(100% - 58px);
    top: 58px;
-   position: absolute;
-   padding-top:24px;
+   padding-top:116px;
+   padding-left: 240px;
    background-color: $blacktheme-dark;
 }
 .video-container{
