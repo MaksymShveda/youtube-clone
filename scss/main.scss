@@ -5,7 +5,7 @@
 }
 
 body{
-   background-color:$white;
+   background-color:$blacktheme-dark;
    margin: 0;
    display: flex;
    box-sizing: border-box;
@@ -52,22 +52,42 @@ nav{
 display: flex;
 justify-self: flex-end;
 }
-
-aside{
+.sidebar-wide{
 background-color:$black-theme-light ;
 width: 240px;
 position: fixed;
-top:56px;
 left:0;
-height:calc(100vh - 56px);
 overflow-y:scroll;
-box-sizing: border-box  ;
+box-sizing: border-box;
+padding: 0px 36px 0px 24px;
+height: calc(100vh - 56px);
+top: 56px;
 }
-aside button{
+.sidebar-notwide{
+background-color: $black-theme-light;
+width: 72px;
+   position: fixed;
+   display: none;
+   left: 0;
+   box-sizing: border-box;
+   top: 56px;
+   height: calc(100vh - 56px);
+}
+.sidebar-button{
    color:$white;
    font-weight: $regular;
    display: flex;
    align-items: center;
+}
+.sidebar-button2{
+   color: $white;
+   font-size: $xs;
+   font-weight: $regular;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   padding: 0;
 }
 .topmenu{
    display: flex;
@@ -80,8 +100,8 @@ aside button{
 .sidebar-button{
    height:40px;
 }
-aside{
-   padding: 0px 36px 0px 24px;
+.sidebar-button2{
+   flex-direction: column;
 }
 button {
    border:none;
@@ -89,8 +109,6 @@ button {
    background-color: transparent;
 }
 .content{
-   width: calc(100vw - 240px);
-   height: calc(100vh - 56px);
    top: 56px;
    left: 240px;
    position: absolute;
@@ -129,16 +147,19 @@ button {
  }
 
 .videos{
-   top: 58px;
-   padding-top:116px;
-   padding-left: 240px;
+   padding-top:74px;
    background-color: $blacktheme-dark;
+   flex-wrap: wrap;
 }
 .video-container{
    display: flex;
-   padding: 0px 32px;
+   padding: 0px 32px 0px 36px;
    background-color: $blacktheme-dark;
    box-sizing: border-box;
+   flex-wrap: wrap;
+}
+.video{
+   padding-right: 8px;
 }
 
 .video-title{
@@ -151,6 +172,7 @@ button {
    display: flex;
    padding: 12px 0px;
    padding-bottom: 40px;
+   width: 288px;
 }
 .channel-icon{
    padding-right: 11px;
@@ -172,7 +194,7 @@ button {
    height: 14px;
    margin: 0px 2px;
 }
-.topmenu, .detailedmenu, .subscriptions{
+.topmenu, .subscriptions{
    border-bottom: 1px solid $bordor-color;
 }
 .subscribers-newvids{
@@ -184,4 +206,31 @@ button {
 .icon-button{
    width: 24px;
    height: 24px;
+}
+@media(max-width:992px){
+  .filterbar{
+     display: none;
+  }
+  .videos{
+     padding-top: 16px;
+  }
+}
+@media(max-width:1296px){
+   .sidebar-wide{
+      display: none;
+   }
+   .sidebar-notwide{
+      display: block;
+   }
+   .content{
+      left: 72px;
+   }
+   .filterbar{
+      width: calc(100vw - 72px);
+   }
+}
+@media(max-width:576px){
+   .search{
+      display: none;
+   }
 }
