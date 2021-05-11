@@ -22,10 +22,13 @@
 		<div class="search">
 			<input class="search-input" placeholder="Search"></input>
 			<button class="search-button">
-				<img src="images/icons/search.svg"></img>
+				<img src="images/icons/search.svg" />
 			</button>
 		</div>
 		<nav>
+			<button class="search-phone">
+				<img src="images/icons/search.svg" class="search-icon" />
+			</button>
 			<button class="nav-button">
 				<img src="images/icons/create.svg" class="icon-header"></img>
 			</button>
@@ -109,15 +112,15 @@
 					</div>
 				</button>
 				<button class="sidebar-button">
-					<img src="images/icons/your-movie.svg" class="icon-button"></img>
+					<img src="images/icons/channel-icon6.svg" class="icon-button"></img>
 					<p>AQUAHOLIC</p>
 				</button>
 				<button class="sidebar-button">
-					<img src="images/icons/watch-later.svg" class="icon-button"></img>
+					<img src="images/icons/channel-icon5.svg" class="icon-button"></img>
 					<p>yener ustun</p>
 				</button>
 				<button class="sidebar-button">
-					<img src="images/icons/show-more.svg" class="icon-button"></img>
+					<img src="images/icons/channel-icon4.svg" class="icon-button"></img>
 					<div class="subscribers-newvids">
 						<p>SparkFun Electroni...</p>
 						<p style="color:#3392FF">•</p>
@@ -131,27 +134,27 @@
 		</div>
 		<div class="sidebar-notwide">
 			<button class="sidebar-button2">
-				<img src="images/icons/home.svg" class="icon-button" />
+				<img src="images/icons/home.svg" class="icon-button-resp" />
 				<p>Home</p>
 			</button>
 			<button class="sidebar-button2">
-				<img src="images/icons/home.svg" class="icon-button" />
+				<img src="images/icons/home.svg" class="icon-button-resp" />
 				<p>Navigator</p>
 			</button>
 			<button class="sidebar-button2">
-				<img src="images/icons/subscription.svg" class="icon-button" />
+				<img src="images/icons/subs.svg" class="icon-button-resp" />
 				<p>Subscriptions</p>
 			</button>
 			<button class="sidebar-button2">
-				<img src="images/icons/originals.svg" class="icon-button" />
+				<img src="images/icons/originals.svg" class="icon-button-resp" />
 				<p>Originals</p>
 			</button>
 			<button class="sidebar-button2">
-				<img src="images/icons/home.svg" class="icon-button" />
+				<img src="images/icons/home.svg" class="icon-button-resp" />
 				<p>YouTube Music</p>
 			</button>
 			<button class="sidebar-button2">
-				<img src="images/icons/library.svg" class="icon-button" />
+				<img src="images/icons/library.svg" class="icon-button-resp" />
 				<p>Library</p>
 			</button>
 		</div>
@@ -187,7 +190,7 @@
 			<button class="resultsfilter">Baseball</button>
 
 		</div>
-		<div class="videos">
+		<div class="video-block">
 			<div class="video">
 				<a href="#" class="video-content">
 					<img class="videoz" src="images/content/image1.png"></img>
@@ -200,7 +203,10 @@
 						<a href="#" class="video-title">Doğu Karadeniz Dağlarında
 							Bisikletle Geziyoruz #100</a>
 						<div class="subdetails">
-							<a href="#" class="channel-name">Yiğit Can İÇ</a>
+							<div class="channel-verified">
+							    <a href="#" class="channel-name">Yiğit Can İÇ</a>
+								<img src="images/icons/verified.svg" class="verified-icon" />
+							</div>
 							<div class="video-views-time">
 								<p>27K views</p>
 								•
@@ -221,7 +227,10 @@
 					<div class="video-details">
 						<a href="#" class="video-title">Her Derde Deva: CSS Flexbox</a>
 						<div class="subdetails">
-							<a href="#" class="channel-name">Adem Ilter</a>
+							<div class="channel-verified">
+							    <a href="#" class="channel-name">Adem Ilter</a>
+								<img src="images/icons/verified.svg" class="verified-icon" />
+							</div>
 							<div class="video-views-time">
 								<p>16K views</p>
 								•
@@ -243,7 +252,10 @@
 						<a href="#" class="video-title">Doğu Karadeniz Dağlarında
 							Bisikletle Geziyoruz #100</a>
 						<div class="subdetails">
-							<a href="#" class="channel-name">Coşkun Aral Anlatıyor</a>
+							<div class="channel-verified">
+							    <a href="#" class="channel-name">Coşkun Aral Anlatıyor</a>
+								<img src="images/icons/verified.svg" class="verified-icon" />
+							</div>
 							<div class="video-views-time">
 								<p>26K views</p>
 								•
@@ -267,7 +279,7 @@
 						<div class="subdetails">
 							<div class="channel-verified">
 								<a href="#" class="channel-name">SparkFun Electronics</a>
-								<img src="verified" src="images/icons/verified.svg" />
+								<img src="images/icons/verified.svg" class="verified-icon" />
 							</div>
 							<div class="video-views-time">
 								<p>2.3K views</p>
@@ -311,7 +323,10 @@
 						<a href="#" class="video-title">£940,000 Yatch Your : Princess
 							F50</a>
 						<div class="subdetails">
-							<a href="#" class="channel-name">AQUAHOLIC</a>
+							<div class="channel-verified">
+							    <a href="#" class="channel-name">AQUAHOLIC</a>
+								<img src="images/icons/verified.svg" class="verified-icon" />
+							</div>
 							<div class="video-views-time">
 								<p>49K views</p>
 								•
@@ -353,7 +368,10 @@
 					<div class="video-details">
 						<a href="#" class="video-title">iPad Air - Kutu Açılışı ve İlk İzlenimler (4. Nesil)</a>
 						<div class="subdetails">
-							<a href="#" class="channel-name">iPhonedo Turkey</a>
+							<div class="channel-verified">
+		                        <a href="#" class="channel-name">iPhonedo Turkey</a>
+								<img src="images/icons/verified.svg" class="verified-icon" />
+							</div>
 							<div class="video-views-time">
 								<p>108K views</p>
 								•
